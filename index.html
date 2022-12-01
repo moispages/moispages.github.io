@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="https://scontent-nrt1-1.xx.fbcdn.net/v/t39.30808-1/304800999_476665194584547_6282524290052851060_n.jpg?stp=cp0_dst-jpg_p50x50&_nc_cat=107&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=c_rnyOWniZ0AX8OezGI&_nc_ht=scontent-nrt1-1.xx&edm=ADwHzz8EAAAA&oh=00_AfA2DZjge1fNA3otxqo16mAlfMhuRxZ7uOkYTe2BhMkuBQ&oe=638B6D94" />
+<title>MOIS HUB</title>
+<style>
+.btn:hover{
+  background: #FFFF88;
+}
+..tab_wrap{width:500px; margin:80px auto;}
+input[type="radio"]{display:none;}
+.tab_area{font-size:0; margin:0 10px;}
+.tab_area label{width:150px; margin:0 5px; display:inline-block; padding:12px 0; color:#999; background:#ddd; text-align:center; font-size:13px; cursor:pointer; transition:ease 0.2s opacity;}
+.tab_area label:hover{opacity:0.5;}
+.panel_area{background:#fff;}
+.tab_panel{width:100%; padding:80px 0; display:none;}
+.tab_panel p{font-size:14px; letter-spacing:1px; text-align:center;}
+
+#tab1:checked ~ .tab_area .tab1_label{background:#fff; color:#000;}
+#tab1:checked ~ .panel_area #panel1{display:block;}
+#tab2:checked ~ .tab_area .tab2_label{background:#fff; color:#000;}
+#tab2:checked ~ .panel_area #panel2{display:block;}
+#tab3:checked ~ .tab_area .tab3_label{background:#fff; color:#000;}
+#tab3:checked ~ .panel_area #panel3{display:block;}
+</style>
+</head>
+<body style="background: lightblue;">
+<script>
+alert("このページ「MOIS HUB」は、MOIS生が使用することを想定していますが、本ページを利用することによって発生した損害などについての責任は一切開発元が負いません。予めご了承願います。");
+alert("まなBOXは、12/04のAM7:00～8:00において、システムメンテナンスを実施します。その影響で、メンテナンス中はまなBOXが利用できません。");
+</script>
+<h1>MOIS HUB</h1>
+<div class="tab_wrap">
+	<input id="tab1" type="radio" name="tab_btn" checked>
+	<input id="tab2" type="radio" name="tab_btn">
+	<input id="tab3" type="radio" name="tab_btn">
+
+	<div class="tab_area">
+		<label class="tab1_label" for="tab1">連絡・提出など</label>
+		<label class="tab2_label" for="tab2">ツール</label>
+		<label class="tab3_label" for="tab3">その他</label>
+	</div>
+	<div class="panel_area">
+		<div id="panel1" class="tab_panel">
+<p class="btn" onclick="window.open('https://mois.mana-box.jp/epf-web/', '_blank');" style="cursor: pointer; border-radius: 8px; border: solid 1px blue; padding: 4px; box-shadow: 1px 1px 4px #888; color: black; text-decoration: none;">まなBOX<p class="btn" class="btn">
+<p class="btn" onclick="window.open('https://auth.classi.jp/students', '_blank');" style="cursor: pointer; border-radius: 8px; border: solid 1px purple; padding: 4px; box-shadow: 1px 1px 4px #888; color: black; text-decoration: none;">Classi<p class="btn" class="btn">
+<p class="btn" onclick="window.open('https://teams.microsoft.com/', '_blank');" style="cursor: pointer; border-radius: 8px; border: solid 1px blue; padding: 4px; box-shadow: 1px 1px 4px #888; color: black; text-decoration: none;">Teams<p class="btn" class="btn">
+</div>
+		<div id="panel2" class="tab_panel">
+<p class="btn" onclick="window.open('https://translate.google.co.jp/?hl=ja', '_blank');" style="cursor: pointer; border-radius: 8px; border: solid 1px lightblue; padding: 4px; box-shadow: 1px 1px 4px #888; color: black; text-decoration: none;">翻訳<p class="btn" class="btn">
+<p class="btn" onclick="window.open('https://ktgis.net/kjmapw/', '_blank');" style="cursor: pointer; border-radius: 8px; border: solid 1px green; padding: 4px; box-shadow: 1px 1px 4px #888; color: black; text-decoration: none;">今昔マップ<p class="btn" class="btn">
+<p class="btn" onclick="window.open('https://www.mybib.com/#/projects/8o580k/citations', '_blank');" style="cursor: pointer; border-radius: 8px; border: solid 1px red; padding: 4px; box-shadow: 1px 1px 4px #888; color: black; text-decoration: none;">My Bib<p class="btn" class="btn">
+</div>
+		<div id="panel3" class="tab_panel">
+<p class="btn" onclick="window.open('https://www.office.com/?auth=2', '_blank');" style="cursor: pointer; border-radius: 8px; border: solid 1px yellow; padding: 4px; box-shadow: 1px 1px 4px #888; color: black; text-decoration: none;">Microsoft365<p class="btn" class="btn">
+<p class="btn" onclick="window.open('https://google.co.jp/', '_blank');" style="cursor: pointer; border-radius: 8px; border: solid 1px orange; padding: 4px; box-shadow: 1px 1px 4px #888; color: black; text-decoration: none;">Google検索<p class="btn" class="btn">
+<p class="btn" onclick="window.open('https://www.city-saitama.ed.jp/ohmiyakokusai-h/', '_blank');" style="cursor: pointer; border-radius: 8px; border: solid 1px orange; padding: 4px; box-shadow: 1px 1px 4px #888; color: black; text-decoration: none;">MOISホームページ<p class="btn" class="btn">
+</div>
+	</div>
+</div>
+</body>
+</html>
