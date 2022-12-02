@@ -28,7 +28,10 @@ input[type="radio"]{display:none;}
 <body style="background: lightblue;">
 <script src="https://sdk.push7.jp/v2/p7sdk.js"></script>
 <script>
-p7.init("d43b1074598048f7bb8714687c834e89");
+p7.init("d43b1074598048f7bb8714687c834e89",{
+  mode:"native",
+  subscribe:"auto"
+});
 </script>
 <script>
 alert("このページ「MOIS HUB」は、MOIS生が使用することを想定していますが、本ページを利用することによって発生した損害などについての責任は一切開発元が負いません。予めご了承願います。");
